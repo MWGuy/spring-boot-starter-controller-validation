@@ -4,8 +4,8 @@ plugins {
     kotlin("plugin.spring") version "1.8.22"
 }
 
-group = "com.mwguy"
-version = "1.0-SNAPSHOT"
+group = "com.github.MWGuy"
+version = "1.0"
 
 repositories {
     mavenCentral()
@@ -22,9 +22,9 @@ kotlin {
 publishing {
     publications {
         create<MavenPublication>("maven") {
-            groupId = "com.mwguy"
+            groupId = "com.github.MWGuy"
             artifactId = "spring-boot-starter-controller-validation"
-            version = "1.0-SNAPSHOT"
+            version = "1.0"
 
             from(components["java"])
         }
